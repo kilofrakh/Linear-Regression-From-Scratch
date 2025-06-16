@@ -29,3 +29,5 @@ epochs = 1000
 for i in range(epochs):
     m,b = gradientDescent(m, b, df, l)
 print(f"m: {m}, b: {b}")
+
+print("the error is: ", np.mean((df.score - (m * df.sutdytime + b)) ** 2))
